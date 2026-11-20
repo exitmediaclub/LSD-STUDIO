@@ -28,7 +28,7 @@ export const LOGO = {
   text: "LSDSTUDIO",
 };
 
-export const BRAND = "LSD STUDIO";
+export const BRAND = " STUDIO";
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
