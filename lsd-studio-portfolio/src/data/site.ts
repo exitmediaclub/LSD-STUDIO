@@ -24,8 +24,8 @@ export type Project = {
 export const LOGO = {
   image: "LSD-LOGO.png",
   showTextWithImage: false,
-  mark: "LSD",
-  text: "STUDIO",
+  mark: "LSD-LOGO.png",
+  text: "LSDSTUDIO",
 };
 
 export const BRAND = "LSD STUDIO";
