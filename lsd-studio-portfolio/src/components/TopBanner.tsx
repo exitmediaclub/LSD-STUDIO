@@ -24,7 +24,7 @@ export default function TopBanner() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#28c840] opacity-70" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-[#28c840]" />
           </span>
-          LSD STUDIO INDONESIA
+          LSD STUDIO
           <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
         </Link>
       </div>
