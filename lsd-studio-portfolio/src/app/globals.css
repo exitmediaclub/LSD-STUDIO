@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: #eeeeec;
+  color: #111;
+}
+
+body {
+  @apply bg-paper font-sans text-ink antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #2f6bff;
+  color: #fff;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  /* Jendela ala macOS */
+  .window {
+    @apply overflow-hidden rounded-2xl bg-white/80 shadow-window backdrop-blur-xl;
+  }
+  .window-bar {
+    @apply flex items-center gap-2 border-b border-black/5 bg-white/70 px-4 py-3;
+  }
+  .traffic {
+    @apply flex gap-1.5;
+  }
+  .traffic span {
+    @apply block h-3 w-3 rounded-full;
+  }
+  .traffic span:nth-child(1) { background: #ff5f57; }
+  .traffic span:nth-child(2) { background: #febc2e; }
+  .traffic span:nth-child(3) { background: #28c840; }
+
+  /* Label ikon desktop */
+  .icon-label {
+    @apply rounded px-1 text-center text-[10px] font-semibold uppercase leading-tight tracking-wide text-ink;
+  }
+  .group:hover .icon-label,
+  .group:focus-visible .icon-label {
+    @apply bg-select text-white;
+  }
+
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-icon active:scale-95;
+  }
+  .btn-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-black/10 bg-white px-6 py-3 text-sm font-semibold text-ink transition-all duration-300 hover:-translate-y-0.5 hover:shadow-icon active:scale-95;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-[11px] font-medium uppercase tracking-[0.25em] text-muted;
+  }
+
+  .round-btn {
+    @apply grid h-14 w-14 place-items-center rounded-full bg-white text-ink shadow-icon transition-transform duration-300 hover:scale-110 active:scale-95;
+  }
+}
+
+/* Grain halus */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 80;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
