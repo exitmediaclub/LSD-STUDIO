@@ -28,7 +28,7 @@ export const LOGO = {
   text: "LSDSTUDIO",
 };
 
-export const BRAND = " STUDIO";
+export const BRAND = "LSDSTUDIO";
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -53,8 +53,8 @@ export const HERO = {
   // ffmpeg -i input.mp4 -c:v libx264 -g 1 -crf 22 -an -movflags +faststart public/videos/hero.mp4
   video: "/videos/hero.mp4",
   // Poster utama (foto besar di tengah, seperti referensi)
-  poster: "/images/hero-poster.jpg",
-  title: "LSD STUDIO",
+  poster: "/images/LSD-STUDIO.png",
+  title: "LSDSTUDIO",
   subtitle: "Illustration · Logofolio · Branding · Social Media",
 };
 
