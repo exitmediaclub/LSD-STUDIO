@@ -138,7 +138,7 @@ export const DESKTOP_ICONS: { label: string; href: string; image?: string; x: nu
   { label: "VINYL COVER", href: "/projects#graphic", x: 40, y: 52 },
   { label: "COLLAGE ANIM", href: "/projects#graphic", x: 57, y: 50 },
   { label: "MERCH", href: "/projects#illustration", x: 52, y: 70 },
-  { label: "GLOW SKINCARE", href: "/projects#social", x: 75, y: 55 },
+  { label: "GLOW IN THE DARK", href: "/projects#social", x: 75, y: 55 },
   { label: "FANTASMAGORIE", href: "/projects#illustration", x: 44, y: 72 },
   { label: "VOLT RECORDS", href: "/projects#logofolio", x: 82, y: 40 },
   { label: "TOUR POSTER", href: "/projects#graphic", x: 18, y: 58 },
