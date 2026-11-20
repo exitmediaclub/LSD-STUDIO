@@ -21,6 +21,13 @@ export type Project = {
   likes?: string;
 };
 
+export const LOGO = {
+  image: "LSD-LOGO.png",
+  showTextWithImage: false,
+  mark: "LSD",
+  text: "STUDIO",
+};
+
 export const BRAND = "LSD STUDIO";
 
 export const NAV_LINKS = [
